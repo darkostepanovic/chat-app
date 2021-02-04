@@ -50,6 +50,7 @@ const ChatRoom = () => {
                 <h5>General Chat Room</h5>
                 <main>
                     { messages && messages.map((msg: IMessage) => <ChatMessage key={msg.id} message={msg} onReply={sendReply}/>) }
+                    { (!messages || messages.length === 0) && <p>Be the first to write something cool...</p> }
                     <div ref={dummy}/>
                 </main>
             </Container>
