@@ -79,3 +79,15 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 │    |    ├── userId: string
 │    |    ├── replies: Message[]
 ```
+
+## Future upgrades suggestions
+
+- Implement messages and replies validation
+- Switch to SQL database  
+- Implement redux store
+- Implement multiple chat rooms
+- Implement 1-1 messaging
+- Implement emojis
+- Implement file sending
+- Implement end-to-end encryption
+- Add multiple SSO options
