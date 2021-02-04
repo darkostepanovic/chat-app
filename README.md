@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Chat app with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -39,8 +39,43 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Libraries Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Firebase Firestore Database 
+- Material UI
+- Polished
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies
+* [Atomic design](https://bradfrost.com/blog/post/atomic-web-design/) methodology
+* [BEM naming convention](http://getbem.com/naming/)
+* [styled-components](https://https://styled-components.com/)
+
+
+## Project's Folder Structure
+```
+/
+├── node_modules
+├── public
+└─── source
+     ├── assets
+     │    ├── images
+     ├── components
+     │    ├── blocks
+     │    ├── elements
+     ├── config
+     ├── containers
+     ├── services
+```
+
+## Firestore Document Model Structure
+```
+/
+├── messages
+│    ├── message: uid
+│    |    ├── createdAt: timestamp
+│    |    ├── name: string
+│    |    ├── photoURL: string
+│    |    ├── text: string
+│    |    ├── userId: string
+│    |    ├── replies: Message[]
+```
